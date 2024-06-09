@@ -2,13 +2,11 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
-	"time"
+	"math/rand/v2"
 )
 
 func main() {
-	rand.Seed(time.Now().UnixNano())
-	target := rand.Intn(100) + 1
+	var target = rand.IntN(100) + 1
 
 	var guess int
 	attempts := 0
